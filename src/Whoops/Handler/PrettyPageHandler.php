@@ -817,7 +817,7 @@ class PrettyPageHandler extends Handler
      *
      * @return array $values without sensitive data
      */
-    private function masked(array $superGlobal, $superGlobalName)
+    private function masked(array|\ArrayAccess $superGlobal, $superGlobalName)
     {
         $blacklisted = $this->blacklist[$superGlobalName];
 
